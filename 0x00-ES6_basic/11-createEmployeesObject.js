@@ -1,6 +1,6 @@
-export default function createEmployeesObject(department, employees) {
+export default function createEmployeesObject(departmentName employees) {
   return {
-    [department]: [
+    [departmentName]: [
       ...employees,
     ]
   };
