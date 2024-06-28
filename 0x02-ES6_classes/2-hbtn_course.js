@@ -4,9 +4,10 @@
 export default class HolbertonCourse {
   /**
    * Constructor of class
-   * @name {String} = Name of course
-   * @length {Number} - Length of course.
-   * @students {String[]} - Nmaes of studensts in course
+   *
+   * @param name {String} = Name of course
+   * @param length {Number} - Length of course.
+   * @param students {String[]} - Nmaes of studensts in course
    */
   constructor(name, length, students) {
     this._name = name;
