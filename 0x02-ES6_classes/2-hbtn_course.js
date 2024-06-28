@@ -42,7 +42,7 @@ export default class HolbertonCourse {
    * sets the length of the course
    */
   set length(val) {
-    if (!Number.isInteger(val)) {
+    if (typeof val !== 'number') {
       throw new TypeError('Length must be a number')
     }
     this._length = val;
