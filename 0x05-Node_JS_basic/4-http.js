@@ -11,4 +11,4 @@ const app = web.createServer((req, res) => {
 
 app.listen(port, host, () => {});
 
-module.exports = app
+module.exports = app;
