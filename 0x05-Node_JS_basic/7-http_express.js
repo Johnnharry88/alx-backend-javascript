@@ -51,7 +51,7 @@ app.get('/', (request, response) => {
 });
 app.get('/students', (request, response) => {
   countStudents(process.argv[2].toString()).then((datax) => {
-    response.send(['This is the list of our studdents', datax].join('\n'));
+    response.send(['This is the list of our students', datax].join('\n'));
   }).catch(() => {
     response.send('This is the list of our students\nCannot load the database');
   });
