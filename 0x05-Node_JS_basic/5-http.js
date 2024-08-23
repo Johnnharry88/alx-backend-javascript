@@ -1,5 +1,5 @@
 const { readFile } = require('fs');
-const web = require('http')
+const web = require('http');
 
 const localhoost = '127.0.0.1';
 const port = 1245;
@@ -36,7 +36,7 @@ function countStudents(fileName) {
         for (const [k, v] of Object.entries(fields)) {
           if (k !== 'field') {
             datax += `Number of students in ${k}: ${v}. `;
-	    datax += `List: ${students[k].join(', ')}\n`;
+            datax += `List: ${students[k].join(', ')}\n`;
           }
         }
         resolve(datax);
